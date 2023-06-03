@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/roadbook-cap-trainer/static/css/main.b1878bd7.css",
-    "main.js": "/roadbook-cap-trainer/static/js/main.1a34a81c.js",
-    "static/js/787.3464337e.chunk.js": "/roadbook-cap-trainer/static/js/787.3464337e.chunk.js",
-    "static/media/Rosa_de_los_vientos_71-svg.png": "/roadbook-cap-trainer/static/media/Rosa_de_los_vientos_71-svg.3caafabb5533a8dbb018.png",
-    "index.html": "/roadbook-cap-trainer/index.html",
-    "main.b1878bd7.css.map": "/roadbook-cap-trainer/static/css/main.b1878bd7.css.map",
-    "main.1a34a81c.js.map": "/roadbook-cap-trainer/static/js/main.1a34a81c.js.map",
-    "787.3464337e.chunk.js.map": "/roadbook-cap-trainer/static/js/787.3464337e.chunk.js.map"
+    "main.css": "https://repocho.github.io/roadbook-cap-trainer/static/css/main.b1878bd7.css",
+    "main.js": "https://repocho.github.io/roadbook-cap-trainer/static/js/main.28db1808.js",
+    "static/js/787.3464337e.chunk.js": "https://repocho.github.io/roadbook-cap-trainer/static/js/787.3464337e.chunk.js",
+    "static/media/Rosa_de_los_vientos_71-svg.png": "https://repocho.github.io/roadbook-cap-trainer/static/media/Rosa_de_los_vientos_71-svg.3caafabb5533a8dbb018.png",
+    "index.html": "https://repocho.github.io/roadbook-cap-trainer/index.html",
+    "main.b1878bd7.css.map": "https://repocho.github.io/roadbook-cap-trainer/static/css/main.b1878bd7.css.map",
+    "main.28db1808.js.map": "https://repocho.github.io/roadbook-cap-trainer/static/js/main.28db1808.js.map",
+    "787.3464337e.chunk.js.map": "https://repocho.github.io/roadbook-cap-trainer/static/js/787.3464337e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b1878bd7.css",
-    "static/js/main.1a34a81c.js"
+    "static/js/main.28db1808.js"
   ]
 }
