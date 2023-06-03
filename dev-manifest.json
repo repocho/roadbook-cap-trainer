@@ -4,17 +4,17 @@
     "description": "Improve your CAP navigation skills with the Roadbook CAP Trainer. Train for roadbook navigation, direction changes, and CAP challenges.",
     "icons": [
         {
-            "src": "https://repocho.github.io/roadbook-cap-trainer/android-chrome-192x192.png",
+            "src": "http://localhost:3000/roadbook-cap-trainer/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "https://repocho.github.io/roadbook-cap-trainer/android-chrome-512x512.png",
+            "src": "http://localhost:3000/roadbook-cap-trainer/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "start_url": "https://repocho.github.io/roadbook-cap-trainer/",
+    "start_url": "http://localhost:3000/roadbook-cap-trainer/",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff"
