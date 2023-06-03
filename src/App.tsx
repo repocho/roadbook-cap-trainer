@@ -96,9 +96,9 @@ function App() {
                     Roadbook <img src={logo} alt="logo" style={{ verticalAlign: 'middle' }} />
                 </h1>
                 <span>Choose the Direction (Left or Right) based on Current and Next CAPs</span>
-                <div style={{ display: 'flex', justifyContent: 'space-around', width: '100%', maxWidth: '50em' }}>
+                <div className={'container'}>
                     <div>
-                        <div style={{ display: 'flex' }}>
+                        <div style={{ display: 'flex', justifyContent: 'center' }}>
                             <span style={markerStyle}>
                                 Current CAP: <h3 style={{ padding: '10px 20px' }}>{currentCap}</h3>
                             </span>
@@ -140,7 +140,7 @@ function App() {
                             }}
                         />
                     </div>
-                    <div>
+                    <div className={'results'}>
                         <h4>
                             Accuracy:{' '}
                             {total ? `${Math.floor((100 * historyCap.reduce((pos, el) => (el.correct ? pos + 1 : pos), 0)) / total)} %` : 'N/A'}

@@ -4,12 +4,12 @@
     "description": "Improve your CAP navigation skills with the Roadbook CAP Trainer. Train for roadbook navigation, direction changes, and CAP challenges.",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png",
+            "src": "%PUBLIC_URL%/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-512x512.png",
+            "src": "%PUBLIC_URL%/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
