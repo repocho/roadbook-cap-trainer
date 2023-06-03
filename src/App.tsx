@@ -1,6 +1,7 @@
 import React from 'react';
 import { useCallback, useState, useEffect } from 'react';
-import logo from './Rosa_de_los_vientos_71-svg.png';
+import windRose from './Rosa_de_los_vientos_71-svg.png';
+import logo from './logo.png';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight, faLocationPin } from '@fortawesome/free-solid-svg-icons';
@@ -91,8 +92,10 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <h2>Roadbook CAP Trainer</h2>
-                <span>Select left or right for the following CAPs</span>
+                <h1>
+                    Roadbook <img src={logo} alt="logo" style={{ verticalAlign: 'middle' }} />
+                </h1>
+                <span>Choose the Direction (Left or Right) based on Current and Next CAPs</span>
                 <div style={{ display: 'flex', justifyContent: 'space-around', width: '100%', maxWidth: '50em' }}>
                     <div>
                         <div style={{ display: 'flex' }}>
@@ -127,7 +130,7 @@ function App() {
                             </span>
                         </div>
                         <img
-                            src={logo}
+                            src={windRose}
                             className="App-logo"
                             alt="logo"
                             style={{
