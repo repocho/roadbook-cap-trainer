@@ -86,7 +86,7 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <h1>
-                    Roadbook <img src={logo} alt="logo" style={{ verticalAlign: 'middle' }} />
+                    Roadbook <img src={logo} alt="logo" style={{ verticalAlign: 'middle', maxHeight: 70 }} />
                 </h1>
                 <span>Choose the Direction (Left or Right) based on Current and Next CAPs</span>
                 <div className={'container'}>
