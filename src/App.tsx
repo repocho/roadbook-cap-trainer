@@ -8,14 +8,6 @@ import { faArrowLeft, faArrowRight, faLocationPin } from '@fortawesome/free-soli
 import { isDirectionCorrect, nextRandomCap } from './utils';
 import HistoryCapList from './HistoryCapList';
 
-// let cap = 0
-// for(let i = 0; i < 10110; i++){
-//   const newCap = nextRandomCap(cap)
-//   if(newCap > 160 && newCap < 200){
-//     console.log(newCap)
-//   }
-
-// }
 const MAX_HISTORY_LENGTH = 15;
 
 function App() {
@@ -32,19 +24,20 @@ function App() {
         }>
     >([]);
     const [showResultAnimation, setShowResultAnimation] = useState(false);
-    const [total, setTotal] = useState(0);
+    const [totals, setTotals] = useState<{
+        correct: number;
+        total: number;
+    }>({ correct: 0, total: 0 });
 
     const setNewRandomCap = useCallback(
         (isLeft: boolean) => {
             const newCap = nextRandomCap(nextCap);
-            setHistoryCap([
-                { current: currentCap, next: nextCap, isLeft, correct: isDirectionCorrect(currentCap, nextCap, isLeft) },
-                ...historyCap.slice(0, MAX_HISTORY_LENGTH - 1),
-            ]);
+            const correct = isDirectionCorrect(currentCap, nextCap, isLeft);
+            setHistoryCap([{ current: currentCap, next: nextCap, isLeft, correct }, ...historyCap.slice(0, MAX_HISTORY_LENGTH - 1)]);
             setCurrentCap(nextCap);
             setNextCap(newCap);
             setShowResultAnimation(true);
-            setTotal(total + 1);
+            setTotals({ correct: totals.correct + (correct ? 1 : 0), total: totals.total + 1 });
         },
         [historyCap, currentCap, nextCap, showResultAnimation]
     );
@@ -141,10 +134,7 @@ function App() {
                         />
                     </div>
                     <div className={'results'}>
-                        <h4>
-                            Accuracy:{' '}
-                            {total ? `${Math.floor((100 * historyCap.reduce((pos, el) => (el.correct ? pos + 1 : pos), 0)) / total)} %` : 'N/A'}
-                        </h4>
+                        <h4>Accuracy: {totals.total ? `${Math.floor((100 * totals.correct) / totals.total)} %` : 'N/A'}</h4>
                         <h4>Previous {MAX_HISTORY_LENGTH} caps:</h4>
                         <HistoryCapList historyCap={historyCap}></HistoryCapList>
                     </div>
